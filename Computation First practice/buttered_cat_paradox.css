@@ -1,0 +1,57 @@
+p {
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    font-size: 25px;
+    line-height: 1.5;
+    transform: translate(-50%, -50%); /* 偏移自身宽度和高度的一半，真正居中 */
+    text-align: center; /* 文本内容居中 */
+}
+
+.cat {
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    text-align: left;
+    font-size: 25px;
+    line-height: 1.0;
+    transform: translateY(-50%); /* 垂直方向偏移一半，使其居中 */
+}
+
+.toast {
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    text-align: right;
+    font-size: 25px;
+    line-height: 1.0;
+    transform: translateY(-50%); /* 垂直方向偏移一半，使其居中 */
+}
+
+.why {
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); /* 偏移自身宽度和高度的一半，真正居中 */
+    font-size: 15px;
+    line-height: 1.0;
+    display: inline-block; /* 让元素的宽度根据文字内容调整 */
+    padding: 20px 40px; /* 增加内边距，让椭圆有足够空间 */
+    border: 2px solid black; /* 椭圆的边框 */
+    border-radius: 35%; /* 设置圆角为50%，形成椭圆效果 */
+}
+
+img {
+    position: absolute;
+    width: 480px;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    transition: transform 0.3s ease;
+}

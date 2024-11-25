@@ -1,0 +1,33 @@
+p {
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+#triggerImage {
+    position: absolute;
+    width: 15vw;  /* 这里使用 viewport width 来使宽度相对于页面大小 */
+    height: auto;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 隐藏图片直到点击触发 */
+#toastInfo, #slicedBread {
+    position: absolute;
+    width: 49vw;  /* 各自宽度各占页面宽度的 49% */
+    height: auto;
+    visibility: hidden;  /* 让图片不可见 */
+}
+
+/* 使得图片不出现在页面外 */
+.hidden {
+    visibility: hidden;
+}

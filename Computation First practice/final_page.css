@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 横向三个图片 */
+    grid-template-rows: repeat(2, 1fr); /* 纵向两个图片 */
+    gap: 10px; /* 图片间的间隙 */
+    width: 90%; /* 网格总宽度占页面90% */
+    height: 90%; /* 网格总高度占页面90% */
+}
+
+.grid-image {
+    width: 100%; /* 图片宽度填满网格单元 */
+    height: 100%; /* 图片高度填满网格单元 */
+    object-fit: cover; /* 图片按比例裁剪适配 */
+    transition: transform 0.5s linear; /* 添加平滑旋转效果 */
+}
