@@ -1,0 +1,42 @@
+p {
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    text-align: left;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.new-text {
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    top: 18%;
+    left: 2%;
+    text-align: left;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.continue {
+    font-family: "Lucida Console", "Courier New", monospace;
+    position: absolute;
+    top: 65%;
+    left: 2%;
+    text-align: left;
+    font-size: 25px;
+    line-height: 1.5;
+    display: inline-block; /* 让元素的宽度根据文字内容调整 */
+    padding: 20px 40px; /* 增加内边距，让椭圆有足够空间 */
+    border: 2px solid black; /* 椭圆的边框 */
+    border-radius: 35%; /* 设置圆角为50%，形成椭圆效果 */
+}
+
+img {
+    position: absolute;
+    width: 850px;
+    top: 0%;
+    right: 0%;
+    height: auto;
+  }
+  

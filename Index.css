@@ -1,0 +1,51 @@
+#movingImg {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: url('MrToast.png') no-repeat center/cover;
+  transition: transform 0.1s; /* 增加一个小的过渡效果 */
+}
+
+/* 新的吐司元素样式（分身） */
+.toast {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: url('MrToast.png') no-repeat center/cover;
+  transition: transform 0.1s;
+}
+
+/* 文本样式 */
+p {
+  font-family: "Lucida Console", "Courier New", monospace;
+  position: absolute;
+  top: 33%; /* 垂直位置设为页面高度的三分之一 */
+  left: 50%; /* 水平居中 */
+  transform: translate(-50%, -50%); /* 通过偏移使段落完全居中 */
+  text-align: center; /* 居中文本 */
+  font-size: 100px; /* 设置更大的字体 */
+  line-height: 1.5; /* 设置行间距，使两行更易读 */
+  white-space: pre-line; /* 保持换行符 */
+}
+
+.new-text {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px; /* 设置不同的字号 */
+  position: absolute;
+  top: 70%; /* 距离页面底部 25% */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 将其完全居中 */
+  text-align: center; /* 文字居中 */
+  line-height: 1.5;
+}
+
+.new-text {
+  display: inline-block; /* 让元素的宽度根据文字内容调整 */
+  padding: 20px 40px; /* 增加内边距，让椭圆有足够空间 */
+  border: 2px solid black; /* 椭圆的边框 */
+  border-radius: 35%; /* 设置圆角为50%，形成椭圆效果 */
+  text-align: center; /* 居中文本 */
+  background-color: rgb(255, 255, 255);
+  z-index: 9999; /* 确保其层级高于其他元素 */
+}
+
